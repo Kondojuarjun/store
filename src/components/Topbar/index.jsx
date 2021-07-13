@@ -16,7 +16,7 @@ const Topbar = ({ loginStatus, logOutAdmin }) => {
                 localStorage.setItem('loginStatus', false)
                 localStorage.setItem('adminLogin', false)
                 localStorage.setItem('salesLogin', false)
-                history.push("/");
+                history.push("/store");
                 logOutAdmin()
             }} style={{ cursor: 'pointer' }}>Logout</p>}
         </div>
