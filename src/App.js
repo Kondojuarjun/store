@@ -23,7 +23,7 @@ function App({ adminLogin, loginStatus, salesLogin }) {
         <Topbar />
         {console.log(adminLogin, loginStatus)}
         <Switch>
-          <Route path="/" exact><Home /></Route>
+          <Route path="/store" exact><Home /></Route>
           <Route path="/login" exact><Home /></Route>
           {adminLogin && loginStatus && <Route path="/" exact><AddMedicine /> </Route>}
           {adminLogin && loginStatus && <Route path="/admin/add_medicine"><AddMedicine /> </Route>}
